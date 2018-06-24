@@ -8,14 +8,17 @@
 #ifndef DTW_HPP
 #define DTW_HPP
 
-#include <cmath>
-#include "Eigen"
+
+#include <iostream>
+//#include <cmath>
+#include <limits>
+#include "Eigen/Dense"
 
 class DTW {
 public:
     DTW();
     static double getSimilarity(Eigen::VectorXd, Eigen::VectorXd);
-    static Eigen::MatrixXd getSimilarityMat(Eigen::VectorXd, Eigen::VectorXd);
+    static double min(double, double, double);
     
 private:
 
