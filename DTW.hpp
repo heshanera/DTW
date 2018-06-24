@@ -10,7 +10,6 @@
 
 
 #include <iostream>
-//#include <cmath>
 #include <limits>
 #include "Eigen/Dense"
 
@@ -18,6 +17,7 @@ class DTW {
 public:
     DTW();
     static double getSimilarity(Eigen::VectorXd, Eigen::VectorXd);
+    static double fastDTW(Eigen::VectorXd, Eigen::VectorXd, int);
     static double min(double, double, double);
     
 private:
